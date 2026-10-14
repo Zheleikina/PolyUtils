@@ -42,6 +42,14 @@
 build/
 Build/
 build-*/
+out/
+
+# Visual Studio
+.vs/
+CMakeSettings.json
+CMakeUserPresets.json
+*.vcxproj.user
+*.suo
 
 # CMake generated files
 CMakeFiles/
@@ -50,6 +58,10 @@ cmake_install.cmake
 Makefile
 install_manifest.txt
 compile_commands.json
+_deps/
+.ninja_deps
+.ninja_log
+build.ninja
 
 # Temporary files
 *.tmp
@@ -66,3 +78,11 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# ===== ВИНЯТКИ для лабораторної (бінарники SDK) =====
+# У репозиторії PolyUtils:
+!sdk/**
+# У репозиторії InterpClient-Implicit:
+!3rdParty/**
+# У репозиторії InterpClient-Explicit (dll у корені):
+!/*.dll
